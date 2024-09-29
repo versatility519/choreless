@@ -1,16 +1,16 @@
 import Link from 'next/link'
-import { WiDayHaze } from "react-icons/wi";
+import { GiLovers } from "react-icons/gi";
 
 const Logobar = () => {
   return (
 
-    <div className="flex justify-between items-center p-4">
-      <div className="flex items-center">
+    <div className="flex justify-between items-center p-8">
+      {/* <div className="flex items-center"> */}
         <Link href="/" className="flex items-center">
-          <WiDayHaze size={56} />
+          <GiLovers size={32} />
           <span className="ml-2 text-3xl font-semibold">Choreless</span>
         </Link>
-      </div>
+      {/* </div> */}
 
     </div>
   )

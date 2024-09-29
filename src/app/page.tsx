@@ -42,7 +42,6 @@ export default function Home() {
                 className="w-full h-auto"
               />
             </div>
-          {/* </section> */}
 
         </main>
 

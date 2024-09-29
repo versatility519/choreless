@@ -6,7 +6,7 @@ const SignInPage = () => {
     return (
         <div className=" ">
             <Logobar />
-            <div className="flex flex-col gap-3 items-center justify-center my-16 bg-white py-8 max-w-lg sm:mx-auto mx-4 rounded-3xl shadow-xl">
+            <div className="flex flex-col gap-3 items-center justify-center  bg-white py-8 max-w-lg sm:mx-auto mx-4 md:my-16 rounded-3xl shadow-xl">
                 <h1 className="text-3xl font-bold">Hello there!</h1>
                 <p className="text-base text-center text-gray-500">Enter your email to sign in to your account</p>
                 <div className="flex flex-col items-center justify-center gap-4 w-full px-8">
@@ -22,7 +22,7 @@ const SignInPage = () => {
                         </Link>
                     </div>
                     <div className="flex gap-2 items-center text-center text-sm text-gray-600">
-                        <p> Don't have an account?</p>
+                        <p> Don&apos;t have an account?</p>
                         <Link href="/auth/signup">
                             <p className="text-black font-semibold hover:underline">
                                 Sign up
