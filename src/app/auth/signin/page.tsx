@@ -4,15 +4,18 @@ import Link from "next/link"
 
 const SignInPage = () => {
     return (
-        <div className=" ">
+        <div className="flex flex-col justify-center items-center w-full px-4 sm:px-0">
             <Logobar />
-            <div className="flex flex-col gap-3 items-center justify-center  bg-white py-8 max-w-lg sm:mx-auto mx-4 md:my-16 rounded-3xl shadow-xl">
+            <div className="flex flex-col gap-3 items-center justify-center bg-white py-8 w-full max-w-lg  md:my-16 rounded-3xl shadow-xl">
                 <h1 className="text-3xl font-bold">Hello there!</h1>
                 <p className="text-base text-center text-gray-500">Enter your email to sign in to your account</p>
                 <div className="flex flex-col items-center justify-center gap-4 w-full px-8">
                     <input type="email" placeholder="Email or phone number" className="w-full p-2 border border-gray-300 rounded-md" />
                     <input type="password" placeholder="Password" className="w-full p-2 border border-gray-300 rounded-md" />
-                    <button className="w-full p-2 bg-black rounded-full text-lg text-white">Login</button>
+                    
+                    <Link href="/summery" className="w-full p-2 bg-black text-center rounded-full text-lg text-white">
+                        Login
+                    </Link>
 
                     <div className="text-center">
                         <Link href="/auth/forgot-password">
