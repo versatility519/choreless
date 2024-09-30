@@ -4,7 +4,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { ChevronDown, Check } from 'lucide-react'
 import Image from 'next/image'
-import SummeryImg from '@/public/summery.png'
+import SummeryImg from '@/public/images/summery.png'
 import { IoMdInformationCircle, IoMdClose } from "react-icons/io";
 
 interface Plan {

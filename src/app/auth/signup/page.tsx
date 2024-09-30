@@ -4,7 +4,7 @@ import Logobar from "@/components/Logobar"
 import Social from "@/components/Social"
 import Link from "next/link"
 import Image from "next/image"
-import signup from "@/public/landing.png"
+import signup from "@/public/images/signup.png"
 
 export default function SignUpPage() {
 
