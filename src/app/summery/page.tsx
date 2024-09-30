@@ -157,21 +157,21 @@ const SubscriptionPage: React.FC = () => {
                         </div>
                         <div className="w-full">
                             <main className='text-left'>
-                                <h2 className="font-walsheim-medium text-[32px] text-black mb-2">Laundry Freedom at Your Fingertips</h2>
+                                <h2 className="font-walsheim-medium text-[32px] mb-2">Laundry Freedom at Your Fingertips</h2>
                                 <p className="text-gray-600 mb-8">Choose your time-saving plan below</p>
 
                                 <div className="space-y-2 mb-8">
                                     <div className="flex items-center">
                                         <div className="bg-black text-white rounded-full size-5 flex items-center justify-center mr-2">1</div>
-                                        <span className="font-walsheim-medium text-black">Pay as you go</span>
+                                        <span className="font-walsheim-medium">Pay as you go</span>
                                     </div>
                                     <div className="flex items-center">
                                         <div className="bg-black text-white rounded-full size-5 flex items-center justify-center mr-2">2</div>
-                                        <span className="font-walsheim-medium text-black">Choreless unlimited</span>
+                                        <span className="font-walsheim-medium">Choreless unlimited</span>
                                     </div>
                                     <div className="flex items-center">
                                         <div className="bg-black text-white rounded-full size-5 flex items-center justify-center mr-2">3</div>
-                                        <span className="font-walsheim-medium text-black">Choreless Unlimited+</span>
+                                        <span className="font-walsheim-medium">Choreless Unlimited+</span>
                                     </div>
                                 </div>
 
