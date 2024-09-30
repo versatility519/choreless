@@ -30,7 +30,7 @@ export default function SignUpPage() {
       <div className="flex flex-col lg:items-start items-center w-full lg:w-1/2">
         <Logobar />
         <div className="flex flex-col gap-3 items-center justify-center lg:mx-auto mx-4 lg:my-16 mb-8 px-8 bg-white pt-16 max-w-lg rounded-3xl shadow-xl">
-          <p className="text-3xl text-center md:px-16 sm:px-4 px-2 font-bold mb-4">Ready to save 5+ hours every week?</p>
+          <p className="text-3xl text-black text-center md:px-16 sm:px-4 px-2 font-bold mb-4">Ready to save 5+ hours every week?</p>
 
           <Link href="/auth/signup/personal-Info" className="w-full text-center  p-3 bg-black rounded-full text-lg text-white">
             Sign up with email
