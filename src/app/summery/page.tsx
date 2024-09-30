@@ -188,7 +188,7 @@ const SubscriptionPage: React.FC = () => {
                                         <div className='px-3'>
                                             <IoMdInformationCircle size={32} />
                                         </div>
-                                        <p className="font-walsheim-medium text-[16px]">
+                                        <p className="font-walsheim-medium text-[16px] text-black">
                                             Transform your to-do list into quality time – let Choreless handle the laundry while you focus on what matters most.
                                         </p>
                                     </div>
@@ -290,13 +290,13 @@ const SubscriptionPage: React.FC = () => {
                                 <p className="text-sm text-gray-600">
                                     <strong>${selectedMembers.members * perPerson}</strong> billed yearly for <strong>{selectedMembers.members} user</strong>
                                 </p>
-                                <p className='text-xs'>
+                                <p className='text-xs text-[#6F6F6F]'>
                                     Pay in 4 installment of $3000 with Flex pay.
                                 </p>
                             </div>
                             <Switch checked={isYearly} onChange={handlePlanChange}></Switch>
                             {isYearlyModalOpen && (
-                                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+                                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 text-black">
                                     <div className="bg-white rounded-lg p-6 shadow-xl max-w-md w-full">
                                         <div className="flex flex-col">
                                             <div className='flex justify-between'>
@@ -350,7 +350,7 @@ const SubscriptionPage: React.FC = () => {
                         <div className='w-full border border-gray-300 rounded-md px-4'>
                             <div className="flex justify-between items-center py-4 border-b">
                                 <div className='flex flex-col gap-2'>
-                                    <span className='font-walsheim-medium text-[20px]'>Unlimited+</span>
+                                    <span className='font-walsheim-medium text-[20px] text-black'>Unlimited+</span>
                                     <span className='text-[16px] text-[#595959]'>{selectedMembers.members} user / month</span>
                                 </div>
                                 <span className='text-[16px] text-[#595959]'>${selectedMembers.members * perPerson} / month</span>
