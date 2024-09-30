@@ -19,12 +19,12 @@ export default function PersonalInfoPage() {
                         <p className="sm:text-3xl text-2xl text-center md:px-16 sm:px-8 px-4 text-black font-bold">Let&apos;s get to started</p>
                     </div>
                     <div className="flex gap-3">
-                        <input type="text" placeholder="Fist Name" className="w-full p-2 border border-gray-300 rounded-md" />
+                        <input type="text" placeholder="First Name" className="w-full p-2 border border-gray-300 rounded-md" />
                         <input type="text" placeholder="Last Name" className="w-full p-2 border border-gray-300 rounded-md" />
                     </div>
-                    <input type="text" placeholder="Phone Number" className="w-full p-2 border border-gray-300 rounded-md" />
+                    <input type="number" placeholder="Phone Number" className="w-full p-2 border border-gray-300 rounded-md" />
                     <input type="email" placeholder="Email" className="w-full p-2 border border-gray-300 rounded-md" />
-                    <input type="password" placeholder="Greate password" className="w-full p-2 border border-gray-300 rounded-md" />
+                    <input type="password" placeholder="Create password" className="w-full p-2 border border-gray-300 rounded-md" />
                 </div>
 
                 <p className="text-sm text-center py-4 text-gray-600">

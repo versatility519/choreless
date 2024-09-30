@@ -14,8 +14,9 @@ const SignInPage = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center gap-4 w-full px-8">
                     <input type="email" placeholder="Email or phone number" className="w-full p-2 border border-gray-300 rounded-md" />
-
-                    <button className="w-full p-2 bg-black rounded-full text-lg text-white">Reset Password</button>
+                    <Link href="/summery" className="w-full text-center p-3 bg-black rounded-full text-lg text-white">
+                        <p>Reset Password</p>
+                    </Link>
 
                     <div className="flex gap-2 items-center text-center text-sm text-gray-600">
                         <p> Don&apos;t have an account?</p>

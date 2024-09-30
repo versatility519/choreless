@@ -361,7 +361,7 @@ const SubscriptionPage: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className='border border-gray-300 rounded-md p-4 w-[60%]'>
+                    <div className='w-full border border-gray-300 rounded-md p-4'>
                         Add your payment information
                     </div>
 
