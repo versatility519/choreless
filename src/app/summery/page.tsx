@@ -158,20 +158,20 @@ const SubscriptionPage: React.FC = () => {
                         <div className="w-full">
                             <main className='text-left'>
                                 <h2 className="font-walsheim-medium text-[32px] text-black mb-2">Laundry Freedom at Your Fingertips</h2>
-                                <p className="text-[16px] text-gray-600 mb-8">Choose your time-saving plan below</p>
+                                <p className="text-gray-600 mb-8">Choose your time-saving plan below</p>
 
                                 <div className="space-y-2 mb-8">
                                     <div className="flex items-center">
                                         <div className="bg-black text-white rounded-full size-5 flex items-center justify-center mr-2">1</div>
-                                        <span className="font-walsheim-medium text-[16px] text-black">Pay as you go</span>
+                                        <span className="font-walsheim-medium text-black">Pay as you go</span>
                                     </div>
                                     <div className="flex items-center">
                                         <div className="bg-black text-white rounded-full size-5 flex items-center justify-center mr-2">2</div>
-                                        <span className="font-walsheim-medium text-[16px] text-black">Choreless unlimited</span>
+                                        <span className="font-walsheim-medium text-black">Choreless unlimited</span>
                                     </div>
                                     <div className="flex items-center">
                                         <div className="bg-black text-white rounded-full size-5 flex items-center justify-center mr-2">3</div>
-                                        <span className="font-walsheim-medium text-[16px] text-black">Choreless Unlimited+</span>
+                                        <span className="font-walsheim-medium text-black">Choreless Unlimited+</span>
                                     </div>
                                 </div>
 
@@ -185,10 +185,10 @@ const SubscriptionPage: React.FC = () => {
 
                                 <div className="bg-[#d8e4e4] py-3 pr-3 rounded-lg">
                                     <div className="flex items-center">
-                                        <div className='px-3'>
+                                        <div className='px-3  '>
                                             <IoMdInformationCircle size={32} />
                                         </div>
-                                        <p className="font-walsheim-medium text-[16px] text-black">
+                                        <p className="font-walsheim-medium text-black">
                                             Transform your to-do list into quality time – let Choreless handle the laundry while you focus on what matters most.
                                         </p>
                                     </div>
@@ -201,13 +201,13 @@ const SubscriptionPage: React.FC = () => {
                 <div className='bg-white px-4 sm:px-16 py-20 shadow-md w-full flex flex-col gap-8'>
                     <div className='border-b pb-8'>
                         <h3 className="font-walsheim-medium text-[32px] text-black mb-4">Select your choreless plan</h3>
-                        <p className="font-walsheim-medium text-[20px] text-black mb-4">Choose your plan</p>
+                        <p className="font-walsheim-medium text-xl text-black mb-4">Choose your plan</p>
                         <div className="flex flex-col sm:flex-row gap-4 mb-6 w-full xl:w-[70%]">
                             {plans.map((plan) => (
                                 <button
                                     key={plan.name}
                                     onClick={() => setSelectedPlan(plan)}
-                                    className={`flex-1 py-2 px-2 rounded-full font-walsheim-medium text-[16px] text-center ${selectedPlan.name === plan.name
+                                    className={`flex-1 py-2 px-2 rounded-full font-walsheim-medium text-center ${selectedPlan.name === plan.name
                                         ? 'bg-[#85C6C0] text-white'
                                         : 'bg-gray-200 text-gray-800'
                                         }`}
@@ -222,14 +222,14 @@ const SubscriptionPage: React.FC = () => {
                                     <div className='rounded-full bg-teal-500 p-1 mr-2'>
                                         <Check className="size-4 text-white" />
                                     </div>
-                                    <span className="text-gray-400 font-walsheim-medium text-[16px]">{feature}</span>
+                                    <span className="text-gray-400 font-walsheim-medium">{feature}</span>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
                     <div>
-                        <h3 className="text-black font-walsheim-medium text-[20px] mb-4">Number of Members in your household</h3>
+                        <h3 className="text-black font-walsheim-medium text-xl mb-4">Number of Members in your household</h3>
                         <div>
                             <div className='w-full flex flex-row bg-white rounded-xl p-4 items-center justify-between border border-[#85C6C0]'
                                 onClick={handleOpen}>
@@ -237,27 +237,26 @@ const SubscriptionPage: React.FC = () => {
                                     className="w-full text-left flex items-center justify-between"
                                 >
                                     <div className='flex flex-col gap-2'>
-                                        <span className="font-walsheim-bold text-[20px] text-black">{selectedMembers.members} members</span>
-                                        <p className="text-[16px] text-gray-600">{selectedMembers.description}</p>
+                                        <span className="font-walsheim-bold text-xl text-black">{selectedMembers.members} members</span>
+                                        <p className="text-gray-600">{selectedMembers.description}</p>
                                     </div>
                                     <div className="text-right">
-                                        <span className="flex font-walsheim-bold text-[20px]">
+                                        <span className="flex font-walsheim-bold text-xl">
                                             <p className='text-black'>${selectedMembers.members * perPerson} </p>
                                             <p className='text-gray-600'>/ mo</p>
                                         </span>
-                                        <p className="text-[16px] text-gray-600">{selectedMembers.members * lbPerson} lb - ∞</p>
+                                        <p className="text-gray-600">{selectedMembers.members * lbPerson} lb - ∞</p>
                                     </div>
                                 </button>
                                 <ChevronDown className="w-5 h-5 text-gray-400 ml-4 hover:cursor-pointer" />
                             </div>
+                            
                             {isModalOpen && (
                                 <div className='inset-0 bg-black bg-opacity-50 fixed flex items-center justify-center top-0 left-0 z-10 w-full h-full  text-black' ref={ref}>
                                     <div className="bg-white border border-gray-300 rounded-[24px] p-6 shadow-lg max-w-md h-auto" >
                                         <div className='flex items-center justify-between w-full'>
-                                            <h1 className='font-bold'>Number of Member of your household</h1>
-                                            <div className='hover:cursor-pointer rounded-full shadow-md p-1' onClick={handleClose}>
-                                                <IoMdClose></IoMdClose>
-                                            </div>
+                                            <p className='font-walsheim-medium text-xl text-black'>Number of Member of your household</p>
+                                            <IoMdClose className='hover:cursor-pointer rounded-full shadow-md  p-0.5' size={24} onClick={handleClose} />
                                         </div>
                                         <p className='text-xs my-2'>Choose your family member</p>
                                         {memberOptions.map((option) => (
@@ -271,12 +270,12 @@ const SubscriptionPage: React.FC = () => {
                                             >
                                                 <div className="flex justify-between items-center">
                                                     <div>
-                                                        <span className="font-extrabold">{option.members} members</span>
-                                                        <p className="text-sm text-gray-600 mt-2">{option.description}</p>
+                                                        <span className="font-walsheim-bold text-xl text-black">{option.members} members</span>
+                                                        <p className="text-[#595959] mt-2">{option.description}</p>
                                                     </div>
                                                     <div className="text-right ">
                                                         <span className="text-lg"><b className='font-extrabold'>${option.members * perPerson}</b> / mo</span>
-                                                        <p className="text-sm text-gray-600 mt-2">${perPerson} / person</p>
+                                                        <p className="text-[#595959] mt-2">${perPerson} / person</p>
                                                     </div>
                                                 </div>
                                             </button>
@@ -346,35 +345,35 @@ const SubscriptionPage: React.FC = () => {
                     </div>
 
                     <div>
-                        <h3 className="font-walsheim-medium text-[20px] text-black mb-4">Payment method</h3>
+                        <h3 className="font-walsheim-medium text-xl text-black mb-4">Payment method</h3>
                         <div className='w-full border border-gray-300 rounded-md px-4'>
                             <div className="flex justify-between items-center py-4 border-b">
                                 <div className='flex flex-col gap-2'>
-                                    <span className='font-walsheim-medium text-[20px] text-black'>Unlimited+</span>
-                                    <span className='text-[16px] text-[#595959]'>{selectedMembers.members} user / month</span>
+                                    <span className='font-walsheim-medium text-xl text-black'>Unlimited+</span>
+                                    <span className='text-[#595959]'>{selectedMembers.members} user / month</span>
                                 </div>
-                                <span className='text-[16px] text-[#595959]'>${selectedMembers.members * perPerson} / month</span>
+                                <span className='text-[#595959]'>${selectedMembers.members * perPerson} / month</span>
                             </div>
                             <div className="flex justify-between items-center py-4 border-b">
-                                <span className='text-[16px] text-[#595959]'>Welcome discount</span>
+                                <span className='text-[#595959]'>Welcome discount</span>
                                 <span className="text-teal-500">-$50</span>
                             </div>
                             <div className="flex justify-between items-center py-4">
-                                <span className='text-[#595959] text-[16px]'>Total due today</span>
-                                <span className='text-black font-walsheim-bold text-[16px]'>${selectedMembers.members * perPerson - 50}</span>
+                                <span className='text-[#595959] >Total due today</span>
+                                <span className='text-black font-walsheim-bold >${selectedMembers.members * perPerson - 50}</span>
                             </div>
                         </div>
                     </div>
 
                     <div className='w-full border border-gray-300 rounded-md p-6'>
-                        <p className='font-walsheim-medium text-[20px] text-black'>Add your payment information</p>
+                        <p className='font-walsheim-medium text-xl text-black'>Add your payment information</p>
                     </div>
 
-                    <div className="flex flex-col  gap-4 mb-8 font-walsheim-medium py-4">
-                        <button className="w-full bg-black text-white py-3 rounded-full text-[16px]">
+                    <div className="flex flex-col text-center gap-4 mb-8 font-walsheim-medium py-4">
+                        <p className="w-full cursor-pointer bg-black text-white py-3 rounded-full">
                             Pay and start subscription
-                        </button>
-                        <p className="text-center text-[12px] text-gray-600 mt-2">
+                        </p>
+                        <p className="text-center text-xs text-gray-600 mt-2">
                             Change, pause or cancel anytime
                         </p>
                     </div>

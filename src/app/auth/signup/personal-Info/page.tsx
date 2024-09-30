@@ -35,6 +35,10 @@ export default function PersonalInfoPage() {
                     </Link>
                 </div>
             </div>
+
+            <div className="text-sm text-center text-gray-500 mt-8 mb-4">
+                © {new Date().getFullYear()} Choreless. All rights reserved.
+            </div>
         </div>
     )
 }

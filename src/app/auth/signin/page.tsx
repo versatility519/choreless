@@ -14,7 +14,7 @@ const SignInPage = () => {
                 <div className="flex flex-col items-center justify-center gap-4 w-full px-8">
                     <input type="email" placeholder="Email or phone number" className="w-full p-2 border border-gray-300 rounded-md" />
                     <input type="password" placeholder="Password" className="w-full p-2 border border-gray-300 rounded-md" />
-                    
+
                     <Link href="/summery" className="w-full p-2 bg-black text-center rounded-full text-lg text-white">
                         Login
                     </Link>
@@ -47,6 +47,12 @@ const SignInPage = () => {
 
                 </div>
             </div>
+
+            <footer>
+                <p className="text-sm text-gray-500 mt-8">
+                    © {new Date().getFullYear()} Choreless. All rights reserved.
+                </p>
+            </footer>
         </div>
     )
 }

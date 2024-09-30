@@ -26,7 +26,7 @@ const Navbar = () => {
             </Link>
           </nav>
           <div className="flex items-center text-center gap-4 ">
-            <Link href="/auth/signin" className='border w-full text-nowrap border-black hover:border-slate-300  hover:bg-slate-300 rounded-lg px-4 py-2'>
+            <Link href="/auth/signin" className='border w-full text-nowrap text-black border-black hover:border-slate-300  hover:bg-slate-300 rounded-lg px-4 py-2'>
               Sign in
             </Link>
             <Link href="/schedule-my-pickup" className=" w-full text-nowrap px-4 py-2 font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700  ">
