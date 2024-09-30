@@ -4,7 +4,7 @@ import Logobar from "@/components/Logobar"
 import Social from "@/components/Social"
 import Link from "next/link"
 import Image from "next/image"
-import signup from "@/public/images/signup.png"
+import Landing from "@/public/images/landing.png"
 
 export default function SignUpPage() {
 
@@ -28,7 +28,9 @@ export default function SignUpPage() {
   return (
     <div className=" flex w-full justify-center lg:flex-row flex-col mx- gap-4">
       <div className="flex flex-col lg:items-start items-center w-full lg:w-1/2">
-        <Logobar />
+        <div className="flex p-10 justify-start w-full">
+          <Logobar />
+        </div>
         <div className="flex flex-col gap-3 items-center justify-center lg:mx-auto mx-4 lg:my-16 mb-8 px-8 bg-white pt-16 max-w-lg rounded-3xl shadow-xl">
           <p className="text-3xl text-black text-center md:px-16 sm:px-4 px-2 font-bold mb-4">Ready to save 5+ hours every week?</p>
 
@@ -46,19 +48,19 @@ export default function SignUpPage() {
           </div>
           <Social />
           {/* <div className="flex gap-2 items-center text-center  text-gray-600"> */}
-            <Link href="/auth/signin">
-              <p className=" text-sm text-center text-blue-500 hover:underline py-8">
-                Already have an account? Log in
-              </p>
-            </Link>
+          <Link href="/auth/signin">
+            <p className=" text-sm text-center text-blue-500 hover:underline py-8">
+              Already have an account? Log in
+            </p>
+          </Link>
           {/* </div> */}
         </div>
       </div>
 
       <div className="relative w-full lg:w-1/2 lg:h-screen">
-      
-        <Image src={signup} alt="logo" className="w-full lg:h-full h-72 lg:rounded-none rounded-[2rem] px-4 lg:px-0  object-cover  " />
- 
+
+        <Image src={Landing} alt="logo" className="w-full lg:h-full h-72 lg:rounded-none rounded-[2rem] px-4 lg:px-0  object-cover  " />
+
         <div className="absolute inset-0 flex items-center justify-center bg-opacity-50">
           <p className="text-3xl text-center px-16 font-bold text-white transition-opacity duration-500">
             {carouselTexts[currentTextIndex]}

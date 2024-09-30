@@ -4,8 +4,9 @@ import Link from "next/link"
 const SignInPage = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full px-4 sm:px-0">
-            <Logobar />
-
+            <div className="flex p-10 justify-start w-full">
+                <Logobar />
+            </div>
             <div className="flex flex-col gap-3 items-center  justify-center my-36 bg-white py-8 w-full max-w-lg rounded-3xl shadow-xl">
                 <h1 className="text-3xl font-bold text-black">Forgot Password</h1>
                 <p className="px-8 text-center text-base text-gray-500">
@@ -15,7 +16,7 @@ const SignInPage = () => {
                     <input type="email" placeholder="Email or phone number" className="w-full p-2 border border-gray-300 rounded-md" />
 
                     <button className="w-full p-2 bg-black rounded-full text-lg text-white">Reset Password</button>
-                     
+
                     <div className="flex gap-2 items-center text-center text-sm text-gray-600">
                         <p> Don&apos;t have an account?</p>
                         <Link href="/auth/signup">

@@ -1,15 +1,12 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import Logo from "@/public/images/logo.png"
 import { LuAlignJustify } from "react-icons/lu";
+import Logobar from './Logobar';
 
 const Navbar = () => {
   return (
     <div className="max-w-7xl xl:mx-auto mx-4 sm:px-6 mt-4 py-4 text-base rounded-2xl shadow-lg bg-white">
       <div className="flex w-full flex-col sm:flex-row items-center gap-1 justify-between">
-        <Link href="/" className="flex items-center">
-          <Image src={Logo} alt="logo" width={32} height={32} />
-        </Link>
+        <Logobar />
         <div className='flex items-center gap-4'>
           <nav className="hidden lg:flex items-center text-center">
             <Link href="/things-we-do" className="text-gray-700 hover:bg-slate-300 rounded-lg px-4 py-2 ">

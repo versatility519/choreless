@@ -6,6 +6,7 @@ import { ChevronDown, Check } from 'lucide-react'
 import Image from 'next/image'
 import SummeryImg from '@/public/images/summery.png'
 import { IoMdInformationCircle, IoMdClose } from "react-icons/io";
+import Logobar from '@/components/Logobar';
 
 interface Plan {
     name: string
@@ -150,17 +151,11 @@ const SubscriptionPage: React.FC = () => {
             <div className="flex mx-auto lg:flex-row flex-col">
                 <div className="flex justify-center lg:justify-end items-center text-center w-full">
                     <div className="lg:min-h-screen w-full lg:max-w-[530px] py-12 lg:py-8 px-4 sm:px-16">
-                        <div className="w-full">
-                            <header className="mb-8">
-                                <div className="flex items-center">
-                                    <svg className="w-8 h-8 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M12 6V12L16 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                    <h1 className="text-3xl font-bold">Choreless</h1>
-                                </div>
-                            </header>
 
+                        <div className="flex py-8 justify-start w-full">
+                            <Logobar />
+                        </div>
+                        <div className="w-full">
                             <main className='text-left'>
                                 <h2 className="text-3xl font-bold mb-2">Laundry Freedom at Your Fingertips</h2>
                                 <p className="text-[16px] text-gray-600 mb-8">Choose your time-saving plan below</p>
@@ -251,7 +246,7 @@ const SubscriptionPage: React.FC = () => {
                                 <ChevronDown className="w-5 h-5 text-gray-400 ml-4 hover:cursor-pointer" />
                             </div>
                             {isModalOpen && (
-                                <div className='inset-0 bg-black bg-opacity-50 fixed flex items-center justify-center top-0 left-0 z-10 w-full h-full'ref={ref}>
+                                <div className='inset-0 bg-black bg-opacity-50 fixed flex items-center justify-center top-0 left-0 z-10 w-full h-full' ref={ref}>
                                     <div className="bg-white border border-gray-300 rounded-[24px] p-6 shadow-lg max-w-md h-auto" >
                                         <div className='flex items-center justify-between w-full'>
                                             <h1 className='font-bold'>Number of Member of your household</h1>

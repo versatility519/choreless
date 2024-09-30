@@ -1,14 +1,14 @@
 import Link from 'next/link'
-import { GiLovers } from "react-icons/gi";
+import Image from 'next/image'
+import Logo from "@/public/images/logo.png"
 
 const Logobar = () => {
   return (
 
-    <div className="flex justify-between items-center p-8">
+    <div className="flex justify-center items-start  ">
       {/* <div className="flex items-center"> */}
         <Link href="/" className="flex items-center">
-          <GiLovers className="text-black" size={32} />
-          <span className="ml-2 text-black text-3xl font-semibold">Choreless</span>
+            <Image src={Logo} alt="logo" className='w-40' />
         </Link>
       {/* </div> */}
 

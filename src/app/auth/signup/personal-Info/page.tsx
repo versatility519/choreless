@@ -8,7 +8,9 @@ export default function PersonalInfoPage() {
 
     return (
         <div className="flex flex-col  w-full ">
-            <Logobar />
+            <div className="flex p-10 justify-start w-full">
+                <Logobar />
+            </div>
             <div className="flex flex-col gap-3 items-center justify-center sm:mx-auto mx-4 lg:my-16 px-8 bg-white py-8 max-w-lg rounded-3xl shadow-xl">
                 <div className=" gap-4 flex flex-col items-center justify-center">
                     <div className="flex gap-3 items-center py-4">
@@ -28,11 +30,11 @@ export default function PersonalInfoPage() {
                 <p className="text-sm text-center py-4 text-gray-600">
                     By selecting continue, you agree to receive service and marketing auto-sent texts from Choreless. Opt-out anytime on your “My Account” page or text “STOP”. Message & data rates may apply. By continuing, you also agree to our Terms and Privacy Policy.
                 </p>
- 
+
                 <Link href="/auth/signup/personal-Info" className="w-full text-center  p-3 bg-black rounded-full text-lg text-white">
                     Continue
                 </Link>
-                
+
             </div>
         </div>
     )

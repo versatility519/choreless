@@ -5,7 +5,9 @@ import Link from "next/link"
 const SignInPage = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full px-4 sm:px-0">
-            <Logobar />
+            <div className="flex p-10 justify-start w-full">
+                <Logobar />
+            </div>
             <div className="flex flex-col gap-3 items-center justify-center bg-white py-8 w-full max-w-lg  md:my-16 rounded-3xl shadow-xl">
                 <h1 className="text-3xl font-bold text-black">Hello there!</h1>
                 <p className="text-base text-center text-gray-500">Enter your email to sign in to your account</p>
