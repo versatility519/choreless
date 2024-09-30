@@ -7,15 +7,15 @@ import { LuChevronLeft } from "react-icons/lu";
 export default function PersonalInfoPage() {
 
     return (
-        <div className="flex flex-col  w-full ">
+        <div className="flex flex-col items-center  w-full ">
             <div className="flex p-10 justify-start w-full">
                 <Logobar />
             </div>
-            <div className="flex  flex-col gap-3 items-center justify-center sm:mx-auto mx-4 lg:my-16 px-8 bg-white py-8 max-w-lg rounded-3xl shadow-xl">
+            <div className="flex flex-col gap-3 w-full sm:mx-auto mx-4 lg:my-16 px-8 bg-white py-8 max-w-lg rounded-3xl shadow-xl">
                 <div className=" gap-4 flex flex-col ">
                     <div className="flex w-full items-center text-start py-4">
-                        <Link href="/auth/signup" className=""><LuChevronLeft size={40} /></Link>
-                        <p className="sm:text-3xl text-2xl text-center md:px-16 sm:px-8 px-4 text-black font-bold">Let&apos;s get to started</p>
+                        <Link href="/auth/signup" className=""><LuChevronLeft size={40} className="text-black" /></Link>
+                        <p className="text-3xl text-center md:px-16 sm:px-8 px-4 text-black font-walsheim-medium">Let&apos;s get to started</p>
                     </div>
                     <div className="flex w-full gap-3">
                         <input type="text" placeholder="First Name" className="w-full p-2 border border-gray-300 rounded-md" />
@@ -35,8 +35,7 @@ export default function PersonalInfoPage() {
                     </Link>
                 </div>
             </div>
-
-            <div className="text-sm text-center text-gray-500 mt-8 mb-4">
+            <div className="fixed bottom-0 text-sm text-gray-500 mt-8 mb-4">
                 © {new Date().getFullYear()} Choreless. All rights reserved.
             </div>
         </div>

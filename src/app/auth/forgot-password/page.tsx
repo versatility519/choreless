@@ -4,14 +4,13 @@ import Link from "next/link"
 const SignInPage = () => {
     return (
         <div>
-
             <div className="flex flex-col justify-center items-center w-full px-4 sm:px-0">
                 <div className="flex p-10 justify-start w-full">
                     <Logobar />
                 </div>
                 <div className="  border-red-500">
                     <div className=" flex flex-col gap-3 items-center  justify-center my-36 bg-white py-8 w-full max-w-lg rounded-3xl shadow-xl">
-                        <h1 className="text-3xl font-bold text-black">Forgot Password</h1>
+                        <h1 className="text-3xl font-walsheim-medium text-black">Forgot Password</h1>
                         <p className="px-8 text-center text-base text-gray-500">
                             Enter your email and we&apos;ll send you instructions for creating a new password.
                         </p>
@@ -32,12 +31,9 @@ const SignInPage = () => {
                         </div>
                     </div>
                 </div>
-
-             
-                    <div className="text-sm  text-gray-500 mt-8 mb-4">
-                        © {new Date().getFullYear()} Choreless. All rights reserved.
-                    </div>
-                 
+                <div className="fixed bottom-0 text-sm  text-gray-500 mt-8 mb-4">
+                    © {new Date().getFullYear()} Choreless. All rights reserved.
+                </div>
             </div>
         </div>
     )

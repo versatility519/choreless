@@ -59,7 +59,7 @@ export default function SignUpPage() {
 
       <div className="relative w-full lg:w-1/2 lg:h-screen">
 
-        <Image src={Landing} alt="logo" className="w-full lg:h-full h-72 lg:rounded-none rounded-[2rem] px-4 lg:px-0  object-cover  " />
+        <Image src={Landing} alt="logo" className="w-full lg:h-auto h-72 lg:rounded-none rounded-[2rem] px-4 lg:px-0  object-cover  " />
 
         <div className="absolute inset-0 flex items-center justify-center bg-opacity-50">
           <p className="text-3xl text-center px-16 font-bold text-white transition-opacity duration-500">

@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="flex w-full flex-col sm:flex-row items-center gap-1 justify-between">
         <Logobar />
         <div className='flex items-center gap-4'>
-          <nav className="hidden lg:flex items-center text-center">
+          <nav className="hidden lg:flex items-center font-walsheim-medium text-[#6F6E74] text-center">
             <Link href="/things-we-do" className="text-gray-700 hover:bg-slate-300 rounded-lg px-4 py-2 ">
               Things we do
             </Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
               Choreless for Business
             </Link>
           </nav>
-          <div className="flex items-center text-center gap-4 ">
+          <div className="flex items-center font-walsheim-medium text-sm text-center gap-4 ">
             <Link href="/auth/signin" className='border w-full text-nowrap text-black border-black hover:border-slate-300  hover:bg-slate-300 rounded-lg px-4 py-2'>
               Sign in
             </Link>
