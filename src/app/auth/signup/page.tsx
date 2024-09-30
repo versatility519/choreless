@@ -61,8 +61,8 @@ export default function SignUpPage() {
 
         <Image src={Landing} alt="logo" className="w-full lg:h-full h-72 lg:rounded-none rounded-[2rem] px-4 lg:px-0  object-cover  " />
 
-        <div className="absolute inset-0 flex items-center justify-center bg-opacity-50">
-          <p className="text-3xl text-center px-16 font-bold text-white transition-opacity duration-500">
+        <div className="absolute inset-0 flex justify-center bg-opacity-50">
+          <p className=" fixed bottom-48 font-walsheim-bold text-5xl text-center px-16 text-white transition-opacity duration-500">
             {carouselTexts[currentTextIndex]}
           </p>
         </div>
