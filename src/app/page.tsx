@@ -14,7 +14,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
 
             <div className="text-center mb-8">
-              <p className="text-3xl font-bold text-gray-700 max-w-3xl mx-auto">
+              <p className="text-3xl font-bold text-gray-700 max-w-3xl mx-auto font-walsheim-bold">
                 You’ll wonder how you did without Choreless
               </p>
             </div>

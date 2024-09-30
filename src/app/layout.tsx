@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-slate-100 antialiased`}
+        className={`bg-slate-100 antialiased font-walsheim`}
       >
         {/* Remove ErrorBoundary component for now */}
         {children}
