@@ -1,3 +1,5 @@
+"use client";
+
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
 import { ChevronDown, Check } from 'lucide-react'
@@ -249,8 +251,8 @@ const SubscriptionPage: React.FC = () => {
                                 <ChevronDown className="w-5 h-5 text-gray-400 ml-4 hover:cursor-pointer" />
                             </div>
                             {isModalOpen && (
-                                <div className='inset-0 bg-black bg-opacity-50 fixed flex items-center justify-center top-0 left-0 z-10 w-full h-full'>
-                                    <div className="bg-white border border-gray-300 rounded-[24px] p-6 shadow-lg max-w-md h-auto" ref={ref}>
+                                <div className='inset-0 bg-black bg-opacity-50 fixed flex items-center justify-center top-0 left-0 z-10 w-full h-full'ref={ref}>
+                                    <div className="bg-white border border-gray-300 rounded-[24px] p-6 shadow-lg max-w-md h-auto" >
                                         <div className='flex items-center justify-between w-full'>
                                             <h1 className='font-bold'>Number of Member of your household</h1>
                                             <div className='hover:cursor-pointer rounded-full shadow-md p-1' onClick={handleClose}>

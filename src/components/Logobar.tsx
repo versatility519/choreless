@@ -8,7 +8,7 @@ const Logobar = () => {
       {/* <div className="flex items-center"> */}
         <Link href="/" className="flex items-center">
           <GiLovers size={32} />
-          <span className="ml-2 text-3xl font-semibold">Choreless</span>
+          <span className="ml-2 text-black text-3xl font-semibold">Choreless</span>
         </Link>
       {/* </div> */}
 
