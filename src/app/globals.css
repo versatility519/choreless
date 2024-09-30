@@ -28,21 +28,21 @@ body {
 @layer base {
   @font-face {
     font-family: 'Walsheim-bold';
-    src: url(/src/public/font/GT-Walsheim-Bold.ttf);
+    src: url('./fonts/GT-Walsheim-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Walsheim-medium';
-    src: url(/src/public/font/GT-Walsheim-Medium.ttf);
+    src: url('./fonts/GT-Walsheim-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Walsheim-regular';
-    src: url(/src/public/font/GT-Walsheim-Regular.ttf);
+    src: url('./fonts/GT-Walsheim-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }

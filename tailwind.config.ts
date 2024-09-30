@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        walsheim: ['Walsheim-regular', 'sans-serif'],
+        'walsheim-bold': ['Walsheim-bold', 'sans-serif'],
+        'walsheim-medium': ['Walsheim-medium', 'sans-serif'],
+      },
     },
   },
   plugins: [],
