@@ -157,21 +157,21 @@ const SubscriptionPage: React.FC = () => {
                         </div>
                         <div className="w-full">
                             <main className='text-left'>
-                                <h2 className="text-3xl font-bold mb-2">Laundry Freedom at Your Fingertips</h2>
+                                <h2 className="font-walsheim-medium text-[32px] mb-2">Laundry Freedom at Your Fingertips</h2>
                                 <p className="text-[16px] text-gray-600 mb-8">Choose your time-saving plan below</p>
 
                                 <div className="space-y-2 mb-8">
                                     <div className="flex items-center">
-                                        <div className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">1</div>
-                                        <span>Pay as you go</span>
+                                        <div className="bg-black text-white rounded-full size-6 flex items-center justify-center mr-4">1</div>
+                                        <span className="font-walsheim-medium text-[16px]">Pay as you go</span>
                                     </div>
                                     <div className="flex items-center">
-                                        <div className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">2</div>
-                                        <span>Choreless unlimited</span>
+                                        <div className="bg-black text-white rounded-full size-6 flex items-center justify-center mr-4">2</div>
+                                        <span className="font-walsheim-medium text-[16px]">Choreless unlimited</span>
                                     </div>
                                     <div className="flex items-center">
-                                        <div className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">3</div>
-                                        <span>Choreless Unlimited+</span>
+                                        <div className="bg-black text-white rounded-full size-6 flex items-center justify-center mr-4">3</div>
+                                        <span className="font-walsheim-medium text-[16px]">Choreless Unlimited+</span>
                                     </div>
                                 </div>
 
@@ -186,9 +186,9 @@ const SubscriptionPage: React.FC = () => {
                                 <div className="bg-[#d8e4e4] py-3 pr-3 rounded-lg">
                                     <div className="flex items-center">
                                         <div className='px-3'>
-                                            <IoMdInformationCircle size={36} />
+                                            <IoMdInformationCircle size={32} />
                                         </div>
-                                        <p className="text-[16px]">
+                                        <p className="font-walsheim-medium text-[16px]">
                                             Transform your to-do list into quality time – let Choreless handle the laundry while you focus on what matters most.
                                         </p>
                                     </div>
@@ -200,14 +200,14 @@ const SubscriptionPage: React.FC = () => {
 
                 <div className='bg-white px-4 sm:px-16 py-20 shadow-md w-full flex flex-col gap-8'>
                     <div className='border-b pb-8'>
-                        <h3 className="text-xl font-semibold mb-4">Select your choreless plan</h3>
-                        <p className="text-gray-600 mb-4">Choose your plan</p>
+                        <h3 className="font-walsheim-medium text-[32px] text-black mb-4">Select your choreless plan</h3>
+                        <p className="font-walsheim-medium text-[20px] text-black mb-4">Choose your plan</p>
                         <div className="flex flex-col sm:flex-row gap-4 mb-6 w-full xl:w-[70%]">
                             {plans.map((plan) => (
                                 <button
                                     key={plan.name}
                                     onClick={() => setSelectedPlan(plan)}
-                                    className={`flex-1 py-2 px-4 rounded-full text-center ${selectedPlan.name === plan.name
+                                    className={`flex-1 py-2 px-2 rounded-full font-walsheim-medium text-[16px] text-center ${selectedPlan.name === plan.name
                                         ? 'bg-[#85C6C0] text-white'
                                         : 'bg-gray-200 text-gray-800'
                                         }`}
@@ -219,28 +219,30 @@ const SubscriptionPage: React.FC = () => {
                         <ul className="space-y-3">
                             {selectedPlan.features.map((feature, index) => (
                                 <li key={index} className="flex items-center">
-                                    <Check className="w-5 h-5 text-teal-500 mr-2" />
-                                    <span className="text-gray-700">{feature}</span>
+                                    <div className='rounded-full bg-teal-500 p-1 mr-2'>
+                                        <Check className="size-4 text-white" />
+                                    </div>
+                                    <span className="text-gray-400 font-walsheim-medium text-[16px]">{feature}</span>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
                     <div>
-                        <h3 className="text-gray-700 mb-4">Number of Members in your household</h3>
+                        <h3 className="text-black font-walsheim-medium text-[20px] mb-4">Number of Members in your household</h3>
                         <div>
-                            <div className='w-full flex flex-row bg-white rounded-md p-6 items-center justify-between border border-[#85C6C0]'
+                            <div className='w-full flex flex-row bg-white rounded-xl p-4 items-center justify-between border border-[#85C6C0]'
                                 onClick={handleOpen}>
                                 <button
                                     className="w-full text-left flex items-center justify-between"
                                 >
                                     <div className='flex flex-col gap-2'>
-                                        <span className="font-semibold">{selectedMembers.members} members</span>
-                                        <p className="text-sm text-gray-600">{selectedMembers.description}</p>
+                                        <span className="font-walsheim-bold text-[20px]">{selectedMembers.members} members</span>
+                                        <p className="text-[16px] text-gray-600">{selectedMembers.description}</p>
                                     </div>
                                     <div className="text-right">
-                                        <span className="font-semibold">${selectedMembers.members * perPerson} / mo</span>
-                                        <p className="text-sm text-gray-600">{selectedMembers.members * lbPerson} lb - ∞</p>
+                                        <span className="font-walsheim-bold text-[20px]">${selectedMembers.members * perPerson} / mo</span>
+                                        <p className="text-[16px] text-gray-600">{selectedMembers.members * lbPerson} lb - ∞</p>
                                     </div>
                                 </button>
                                 <ChevronDown className="w-5 h-5 text-gray-400 ml-4 hover:cursor-pointer" />
@@ -281,7 +283,7 @@ const SubscriptionPage: React.FC = () => {
                             )}
                         </div>
                         <div className='mt-4 flex items-center justify-between'>
-                            <div>
+                            <div className='flex flex-col gap-2'>
                                 <p className="text-sm text-gray-600">
                                     <strong>${selectedMembers.members * perPerson}</strong> billed yearly for <strong>{selectedMembers.members} user</strong>
                                 </p>
@@ -341,35 +343,35 @@ const SubscriptionPage: React.FC = () => {
                     </div>
 
                     <div>
-                        <h3 className="text-gray-700 mb-4">Payment method</h3>
+                        <h3 className="font-walsheim-medium text-[20px] text-black mb-4">Payment method</h3>
                         <div className='w-full border border-gray-300 rounded-md px-4'>
                             <div className="flex justify-between items-center py-4 border-b">
                                 <div className='flex flex-col gap-2'>
-                                    <span>Unlimited+</span>
-                                    <span>{selectedMembers.members} user / month</span>
+                                    <span className='font-walsheim-medium text-[20px]'>Unlimited+</span>
+                                    <span className='text-[16px] text-[#595959]'>{selectedMembers.members} user / month</span>
                                 </div>
-                                <span>${selectedMembers.members * perPerson} / month</span>
+                                <span className='text-[16px] text-[#595959]'>${selectedMembers.members * perPerson} / month</span>
                             </div>
                             <div className="flex justify-between items-center py-4 border-b">
-                                <span>Welcome discount</span>
+                                <span className='text-[16px] text-[#595959]'>Welcome discount</span>
                                 <span className="text-teal-500">-$50</span>
                             </div>
                             <div className="flex justify-between items-center py-4">
-                                <span>Total due today</span>
-                                <span className='font-semibold'>${selectedMembers.members * perPerson - 50}</span>
+                                <span className='text-[#595959] text-[16px]'>Total due today</span>
+                                <span className='text-black font-walsheim-bold text-[16px]'>${selectedMembers.members * perPerson - 50}</span>
                             </div>
                         </div>
                     </div>
 
-                    <div className='w-full border border-gray-300 rounded-md p-4'>
-                        Add your payment information
+                    <div className='w-full border border-gray-300 rounded-md p-6'>
+                        <p className='font-walsheim-medium text-[20px]'>Add your payment information</p>
                     </div>
 
-                    <div className="mb-8">
-                        <button className="w-full bg-black text-white py-3 rounded-full font-semibold">
+                    <div className="flex flex-col  gap-4 mb-8 font-walsheim-medium py-4">
+                        <button className="w-full bg-black text-white py-3 rounded-full text-[16px]">
                             Pay and start subscription
                         </button>
-                        <p className="text-center text-sm text-gray-600 mt-2">
+                        <p className="text-center text-[12px] text-gray-600 mt-2">
                             Change, pause or cancel anytime
                         </p>
                     </div>
