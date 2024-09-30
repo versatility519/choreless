@@ -175,11 +175,11 @@ const SubscriptionPage: React.FC = () => {
                                     </div>
                                 </div>
 
-                                <div className="mb-8">
+                                <div className=" mb-8">
                                     <Image
                                         src={SummeryImg}
                                         alt="Laundry and Choreless bag"
-                                        className="rounded-lg w-full lg:w-[80%] h-[200px] object-cover"
+                                        className="rounded-lg w-full h-[200px] object-cover"
                                     ></Image>
                                 </div>
 
