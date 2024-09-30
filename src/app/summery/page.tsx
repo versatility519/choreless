@@ -237,11 +237,14 @@ const SubscriptionPage: React.FC = () => {
                                     className="w-full text-left flex items-center justify-between"
                                 >
                                     <div className='flex flex-col gap-2'>
-                                        <span className="font-walsheim-bold text-[20px]">{selectedMembers.members} members</span>
+                                        <span className="font-walsheim-bold text-[20px] text-black">{selectedMembers.members} members</span>
                                         <p className="text-[16px] text-gray-600">{selectedMembers.description}</p>
                                     </div>
                                     <div className="text-right">
-                                        <span className="font-walsheim-bold text-[20px]">${selectedMembers.members * perPerson} / mo</span>
+                                        <span className="font-walsheim-bold text-[20px]">
+                                            <p className='text-black'>${selectedMembers.members * perPerson} </p>
+                                            <p className='text-gray-600'>/ mo</p>
+                                        </span>
                                         <p className="text-[16px] text-gray-600">{selectedMembers.members * lbPerson} lb - ∞</p>
                                     </div>
                                 </button>
@@ -364,7 +367,7 @@ const SubscriptionPage: React.FC = () => {
                     </div>
 
                     <div className='w-full border border-gray-300 rounded-md p-6'>
-                        <p className='font-walsheim-medium text-[20px]'>Add your payment information</p>
+                        <p className='font-walsheim-medium text-[20px] text-black'>Add your payment information</p>
                     </div>
 
                     <div className="flex flex-col  gap-4 mb-8 font-walsheim-medium py-4">
