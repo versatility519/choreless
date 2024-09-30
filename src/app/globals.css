@@ -17,11 +17,33 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Walsheim-bold';
+    src: url(/src/public/font/GT-Walsheim-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Walsheim-medium';
+    src: url(/src/public/font/GT-Walsheim-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Walsheim-regular';
+    src: url(/src/public/font/GT-Walsheim-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
   }
 }
