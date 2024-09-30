@@ -7,7 +7,7 @@ const SignInPage = () => {
             <Logobar />
 
             <div className="flex flex-col gap-3 items-center  justify-center my-36 bg-white py-8 w-full max-w-lg rounded-3xl shadow-xl">
-                <h1 className="text-3xl font-bold">Forgot Password</h1>
+                <h1 className="text-3xl font-bold text-black">Forgot Password</h1>
                 <p className="px-8 text-center text-base text-gray-500">
                     Enter your email and we&apos;ll send you instructions for creating a new password.
                 </p>

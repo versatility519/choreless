@@ -14,7 +14,7 @@ export default function PersonalInfoPage() {
                     <div className="flex gap-3 items-center py-4">
                         <Link href="/auth/signup"><LuChevronLeft className="text-2xl" /></Link>
                         {/* <p className="md:text-3xl text-nowrap sm:text-2xl text-center px-16 font-bold">Let&apos;s get to started</p> */}
-                        <p className="sm:text-3xl text-2xl text-center md:px-16 sm:px-8 px-4  font-bold">Let&apos;s get to started</p>
+                        <p className="sm:text-3xl text-2xl text-center md:px-16 sm:px-8 px-4 text-black font-bold">Let&apos;s get to started</p>
                     </div>
                     <div className="flex gap-3">
                         <input type="text" placeholder="Fist Name" className="w-full p-2 border border-gray-300 rounded-md" />

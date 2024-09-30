@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import Navbar from '@/components/Navbar';
-import landing from "@/public/landing.png"
+import landing from "@/public/images/landing.png"
 
 export default function Home() {
   return (
