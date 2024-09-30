@@ -162,15 +162,15 @@ const SubscriptionPage: React.FC = () => {
 
                                 <div className="space-y-2 mb-8">
                                     <div className="flex items-center">
-                                        <div className="bg-black text-white rounded-full size-6 flex items-center justify-center mr-4">1</div>
+                                        <div className="bg-black text-white rounded-full size-5 flex items-center justify-center mr-2">1</div>
                                         <span className="font-walsheim-medium text-[16px]">Pay as you go</span>
                                     </div>
                                     <div className="flex items-center">
-                                        <div className="bg-black text-white rounded-full size-6 flex items-center justify-center mr-4">2</div>
+                                        <div className="bg-black text-white rounded-full size-5 flex items-center justify-center mr-2">2</div>
                                         <span className="font-walsheim-medium text-[16px]">Choreless unlimited</span>
                                     </div>
                                     <div className="flex items-center">
-                                        <div className="bg-black text-white rounded-full size-6 flex items-center justify-center mr-4">3</div>
+                                        <div className="bg-black text-white rounded-full size-5 flex items-center justify-center mr-2">3</div>
                                         <span className="font-walsheim-medium text-[16px]">Choreless Unlimited+</span>
                                     </div>
                                 </div>
